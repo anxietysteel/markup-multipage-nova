@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --btns-padding: 1rem 1.5rem;
+  --color-1: darkslategray;
+  --border-radius-1: 0.5rem;
+  --weight-1: 600;
+  --size-1: 0.75rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  height: 2000px;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 0 0.5rem;
+}
+
+.header {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  left: 0;
+  background-color: white;
+}
+
+.navbar {
+  max-width: 1200px;
+  padding: 0 0.5rem;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 0.65rem;
+}
+
+.nav-section-left {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.nav-section-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--color-1);
+  font-weight: 400;
+}
+
+.nav-item span {
+  line-height: 1;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-transform: capitalize;
+}
+
+.get-started-btn {
+  color: white;
+  background-color: var(--color-1);
+  align-self: stretch;
+  padding: var(--btns-padding);
+  border-radius: 0.25rem;
+  text-transform: capitalize;
+  font-weight: var(--weight-1);
+}
+
+.theme-btn {
+  margin-inline: var(--size-1);
+  cursor: pointer;
+}
+
+.main {
+  padding-top: 10rem;
+}
+
+.hero-blocks {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 5rem;
+  position: relative;
+  padding-bottom: 2.5rem;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-1);
+  align-items: start;
+}
+
+.hero-tag {
+  text-transform: uppercase;
+  font-size: var(--size-1);
+  background-color: rgba(211, 211, 211, 0.5);
+  padding: 0.5rem;
+  color: var(--color-1);
+  border-radius: 0.5rem;
+  font-weight: var(--weight-1);
+}
+
+.hero-title {
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: 500;
+}
+
+.hero-subtitle {
+  color: var(--color-1);
+}
+
+.hero-btns {
+  margin-block: 4rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.hero-btn-1,
+.hero-btn-2 {
+  display: inline-block;
+  padding: var(--btns-padding);
+  border-radius: var(--border-radius-1);
+  text-transform: capitalize;
+}
+
+.hero-btn-1 {
+  background-color: var(--color-1);
+  font-weight: var(--weight-1);
+  color: white;
+}
+
+.hero-btn-2 {
+  color: var(--color-1);
+  border: 1px solid rgba(0, 0, 255, 0.25);
+  font-weight: var(--weight-1);
+}
+
+.hero-btn-2:hover {
+  border-color: rgba(0, 0, 255, 0.5);
+}
+
+.hero-logos {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+}
+
+.hero-logos-text {
+  text-transform: uppercase;
+  color: rgba(47, 79, 79, 0.8);
+  font-size: var(--size-1);
+  letter-spacing: 1px;
+}
+
+.hero-logos-row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.hero-expenses-img {
+  width: 25%;
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  box-shadow: -10px 10px 100px rgba(0, 0, 0, 0.1);
+  border-radius: 1.5rem;
+}
+
+.hero-img {
+  border-radius: 1rem;
+}
